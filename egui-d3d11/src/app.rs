@@ -244,7 +244,7 @@ impl<T> DirectX11App<T> {
                 })
                 .collect::<Vec<_>>();
 
-            self.set_blend_state(dev, ctx);
+            // self.set_blend_state(dev, ctx); crashes for some reason
             self.set_raster_options(dev, ctx);
             self.set_sampler_state(dev, ctx);
 
